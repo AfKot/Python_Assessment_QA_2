@@ -32,7 +32,10 @@ import random
 
 
 def one(string):
-    return
+    final = ""
+    for i in range(0, len(string), 1):
+        final = final + string[i] + string[i] + string[i]
+    return final
 
     # <QUESTION 2>
 
@@ -51,7 +54,11 @@ def one(string):
 
 
 def two(num):
-    return
+    for i in range(1, num, 1):
+        if num % i == 0 and i != 1:
+            return False
+    return True
+
 
     # <QUESTION 3>
 
@@ -69,7 +76,12 @@ def two(num):
 
 
 def three(a):
-    return
+    sum = 0
+    for i in range(1, 5, 1):
+        sum += int(str(a) * i)
+    return sum
+
+print(three(5))
 
     # <QUESTION 4>
 
@@ -117,7 +129,11 @@ def four(string1, string2):
 
 
 def five():
-    return
+    list5 = []
+    for i in range(0, 5, 1):
+        i += 1
+        list5.append(random.randrange(100, 201, 2))
+    return list5
 
     # <QUESTION 6>
 
@@ -137,7 +153,11 @@ def five():
 
 
 def six(string):
-    return
+    str = string.lower()
+    if str[-2:] == "py":
+        return True
+    else:
+        return False
 
     # <QUESTION 7>
 
@@ -162,7 +182,14 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    sort7 = sorted([a, b, c])
+    a1= sort7[0]
+    b1= sort7[1]
+    c1= sort7[2]
+    if b1-a1 == c1-b1:
+        return True
+    return False
+
 
     # <QUESTION 8>
 
@@ -181,7 +208,11 @@ def seven(a, b, c):
 
 
 def eight(string, num):
-    return
+    if len(string) % 2 != 0:
+        str = 
+##????
+
+    return False
 
     # <QUESTION 9>
 
@@ -200,6 +231,8 @@ def eight(string, num):
 
 def nine(string1, string2):
     # make sure string1 is the shortest of the two
+    a9 = sorted([string1, string2])
+    #??
     return
 
     # <QUESTION 10>
@@ -219,4 +252,5 @@ def nine(string1, string2):
 
 
 def ten(a, b):
+    if 
     return
