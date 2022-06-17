@@ -209,10 +209,9 @@ def seven(a, b, c):
 
 def eight(string, num):
     if len(string) % 2 != 0:
-        str = 
+        #str = 
 ##????
-
-    return False
+        return False
 
     # <QUESTION 9>
 
@@ -252,5 +251,5 @@ def nine(string1, string2):
 
 
 def ten(a, b):
-    if 
+    #if 
     return
