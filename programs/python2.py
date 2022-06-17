@@ -111,7 +111,11 @@ print(three(5))
 
 
 def four(string1, string2):
-    return
+    x4 = ""
+    for i in range(len(string1)):
+        x4 += string1[i]
+        x4 += string2[i]
+    return x4
 
     # <QUESTION 5>
 
